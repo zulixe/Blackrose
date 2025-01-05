@@ -4,8 +4,8 @@
 
 | Website                   | Link                                           |
 |---------------------------|------------------------------------------------|
-| Discord | [https://discord.com/invite/monkestation](https://discord.com/invite/monkestation) |
-| Code    | [https://github.com/Vanderlin-Tales-Of-Wine/Vanderlin](https://github.com/Vanderlin-Tales-Of-Wine/Vanderlin)    |
+| Discord | N/A |
+| Code    | [https://github.com/zulixe/Blackrose-Hold](https://github.com/zulixe/Blackrose-Hold)   |
 | Wiki    | N/A |
 
 ## LICENSE
