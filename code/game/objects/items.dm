@@ -469,9 +469,13 @@ GLOBAL_DATUM_INIT(fire_overlay, /mutable_appearance, mutable_appearance('icons/e
 			var/obj/item/clothing/C = src
 			if(C.prevent_crits)
 				if(length(C.prevent_crits))
-					inspec += "\n<b>DEFENSE</b>"
+					inspec += "\n<b>DEFENSE:</b>"
 					for(var/X in C.prevent_crits)
 						inspec += "\n<b>[X] damage</b>"
+			if(C.body_parts_covered)
+				inspec += "\n<b>COVERAGE:</b>"
+				for(var/zone in body_parts_covered2organ_names(C.body_parts_covered))
+					inspec += "\n<b>[parse_zone(zone)]</b>"
 
 //**** General durability
 
@@ -601,9 +605,13 @@ GLOBAL_DATUM_INIT(fire_overlay, /mutable_appearance, mutable_appearance('icons/e
 			if(edelay_type)
 				if(move_after(C, minone(unequip_delay_self-C.STASPD), target = C))
 					return TRUE
+				else
+					return FALSE
 			else
 				if(do_after(C, minone(unequip_delay_self-C.STASPD), target = C))
 					return TRUE
+				else
+					return FALSE
 
 	return TRUE
 
